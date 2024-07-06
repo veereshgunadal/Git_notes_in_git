@@ -29,6 +29,8 @@ github git repo(ui page click commit changes)   Local git repo(git fetch maybe u
 8. run commit command (staging area or local git repo stage)
 9. run git push origin main
 
+can do 2nd Flow by step number like these 1,2, 6,7,8, 3,4,5, 9
+
 3rd Flow (Taking full repo from GitHub)
 
 1. run git clone command
