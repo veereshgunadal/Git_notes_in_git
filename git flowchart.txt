@@ -1,3 +1,3 @@
 Local directory(save file ctrl+s)                        Local git repo(add, commit command)                           github git repo(git push command)
 
-github git repo(ui page click commit changes)             Local git repo                                                Local directory
+github git repo(ui page click commit changes)            Local git repo(git fetch command it tells github is updated)  Local directory
