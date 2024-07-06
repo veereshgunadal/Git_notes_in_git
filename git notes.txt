@@ -1,0 +1,75 @@
+1. download git bash
+2. configuring git
+   git config --global user.name ""
+   git config --global user.email ""
+   git config --list
+
+3. clone - copying repository remote to local
+
+   remote - means in GitHub
+   local  - means in laptop
+
+   git clone "git repo link"
+
+
+4. status - tells the if any changes made in local still not updated in remote
+
+   here compare GitHub repo to local same repo
+
+   1. modified - file is there in github and local both, file content changed
+                      in local only
+
+   2. untracked - new file created in local only, that file is not there GitHub repo
+	
+   3. unmodified or unchanged - GitHub repo and local repo matched
+   
+   4. staged - after changing in local, only ran add command, its like intermediate
+                      stage and need commit command to run
+
+          if changes made in local repo, first   add command
+                                         second  commit command
+	  then changes updated GitHub repo but in GitHub ui page it wont shows any changes
+                                         run push  command
+          then now local repo and GitHub ui page repo matched
+
+5. add - adds new or changed files in your working directory to git staging are
+   
+   git add "filename" or git add . (. means all files)
+
+6. commit - it is the record of change
+   
+   git commit -m "commit message"
+	
+7. git push - upload local repo content to remote repo
+
+   git push origin main  (git push "repo" "branch")
+
+   after commit command run, git hub ui page dont show new changes, for need to run
+   git push command , after this git hub ui page shows new changes
+
+   
+8. init - used to create a new git repo
+
+   git init
+
+   this command run in the local directory to make that directory as 
+       local git repository
+
+  
+   my understanding flow
+
+   Local directory   -- run git init    -- Local git repo
+
+   this flow for cloned repo from git hub
+
+   Local files -- run add -- run commit -- Local git repo
+                                           Local git repo -- run git push -- git hub repo
+
+
+     i. create GitHub repo                         i. create local repo using init command
+    ii. clone to local                            ii. create new repo in GitHub and copy link
+   iii. changes in local                         iii. git remote add origin "new repo link" 
+  iiii. add command                             iiii. run git branch -M main (rename branch in GitHub) (git remote -v and git branch - tells remote, branch)
+ iiiii. commit command                         iiiii. changes in local, add, commit
+iiiiii. push command                          iiiiii. git push origin main
+     

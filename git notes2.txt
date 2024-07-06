@@ -1,0 +1,70 @@
+1. branch 
+
+   origin is remote
+   main is the branch
+
+   2 team members want to add 2 new features f1 and f2.
+   
+   1. create f1 and f2 branches(contains same code of main branch)
+   2. f1 write few codes in f1 branch and f2 write few codes in f2 branch
+   3. f1 and f2 branch merge to main branch
+
+   git branch                     - tell present branch name
+   git checkout -b "branch name"  - create new branch
+   git checkout "branch name"     - navigate to that branch
+   git branch -M "branch name"    - rename the branch
+   git branch -d "branch name"    - delete the branch
+
+2. Merge
+
+   2 ways to merge 
+
+   1st way ( from cmd)
+     git diff "branch name"       - tells the difference in present and given branch name in cmd
+     git merge "branch name"    
+
+   2nd way ( from git hub ui)
+     create pull requests - It lets you tell others about changes you have pushed to a branch in repository on github
+     then review the code and approve with message
+
+3. pull command
+  
+   git pull origin main
+
+   in local have repo, something updated repo in main branch(f1 f2 merged) GitHub ui page
+   but local repo main branch dont have f1 f2 code, that time use pull
+
+   used to fetch and download content from remote repo and immediately update the local repo to match that content
+
+
+4. Merge conflicts
+
+   in 2 branches with same file have different content in same line. it dont allow to merge.
+   
+
+5. Undoing changes
+
+   case 1. Staged changes ( undoing the add command or want code before running add command)
+
+           git reset "file name"   - for single file
+           git reset               - multiple files
+
+   case 2. commit changes ( undoing the commit command or want code before running add and commit command)
+     
+           git reset HEAD~1        - single commit reset means remove latest_commit and code be in latest_commit - 1
+
+           git log                 - check all commit history
+
+   case 3. commit changes (undoing multiple commits)
+
+            git reset "commit hash"          - check in git log which commit u  want
+            git reset --hard "commit hash"   - after git reset commit hash it undo in git repo and but local repo still not undo for use this hard command
+
+
+6. Fork 
+   
+   fork is a new repository that shares code and visibility settings with the original upstream repository
+
+   for is a rough copy
+
+   copying the others github repo, can make changes in same repo in our GitHub, can make pull requests to others GitHub repo
