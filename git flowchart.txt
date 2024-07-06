@@ -1,3 +1,5 @@
-Local directory(save file ctrl+s)                        Local git repo(add, commit command)                           github git repo(git push command)
+Local directory(save file ctrl+s)                        Local git repo(add, commit command)                                                             github git repo(git push command)
 
-github git repo(ui page click commit changes)            Local git repo(git fetch command it tells github is updated)  Local directory
+github git repo(ui page click commit changes)            Local git repo(git fetch command maybe updated github to Local git repo not Local directory)    Local directory(git pull updated here)
+                                                                       (aftet fetch git status is Your branch is behind 'origin/main' by 2 commits
+                                                                        , and can be fast-forwarded.(use "git pull" to update your local branch)
