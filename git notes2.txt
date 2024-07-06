@@ -30,6 +30,8 @@
 3. pull command
   
    git pull origin main
+   
+   before this do git fetch command (it make updated in Local git repo) then git pull (it updated local directory)
 
    in local have repo, something updated repo in main branch(f1 f2 merged) GitHub ui page
    but local repo main branch dont have f1 f2 code, that time use pull

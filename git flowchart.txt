@@ -1,5 +1,52 @@
-Local directory(save file ctrl+s)                        Local git repo(add, commit command)                                                             github git repo(git push command)
+Local directory(save file ctrl+s)               Local git repo(add, commit command)            github git repo(git push command)
 
-github git repo(ui page click commit changes)            Local git repo(git fetch command maybe updated github to Local git repo not Local directory)    Local directory(git pull updated here)
-                                                                       (aftet fetch git status is Your branch is behind 'origin/main' by 2 commits
-                                                                        , and can be fast-forwarded.(use "git pull" to update your local branch)
+github git repo(ui page click commit changes)   Local git repo(git fetch maybe updated github to Local git repo not directory)  directory(git pull updated)  
+                                                      (aftet fetch git status is Your branch is behind 'origin/main' by 2 commits
+                                                       , and can be fast-forwarded.(use "git pull" to update your local branch)
+
+
+
+
+1st Flow (Creating repo in GitHub and use in local)
+
+1. create new repo
+2. clone to Local directory
+3. make changes in local directory
+4. run add command
+5. run commit command ( staging area or local git repo stage)
+6. run git push origin main
+
+
+2nd Flow (Creating repo in Local and use in local)
+
+1. create Local directory
+2. run git init command
+3. create new repo and copy link
+4. run git remote add origin "copy link"
+5. run git branch -M "rename branch"     (default master)
+6. make changes in local directory
+7. run add command
+8. run commit command (staging area or local git repo stage)
+9. run git push origin main
+
+3rd Flow (Taking full repo from GitHub)
+
+1. run git clone command
+2. make changes in local directory
+3. run add command
+4. run commit command
+5. run git push origin main command
+
+4th Flow (Ongoing project make new branch and mering in main branch)
+
+1. git branch -b "branch name"
+2. make changes in local directory
+3. run add command
+4. run commit command
+5. run git push origin "branch name" command  (this made changes in that branch only not in main branch)
+6. run git merge main command ( or GitHub ui page raise pull requests)
+
+5th Flow (Ongoing project taking main branch after merging other branch)
+
+1. run git fetch command (updated the staging area or local git repo stage)
+2. run git pull command
