@@ -22,9 +22,12 @@
    1st way ( from cmd)
      git diff "branch name"       - tells the difference in present and given branch name in cmd
      git merge "branch name"    
+	
      (in practice made changes in branch and pushed code to branch, git diff is there but git merge main is saying already up to date)
-      (and git checkout to main then checked git merge branchname , and updated local (local git and local directory may be))
-       (and then git push origin main and updated in GitHub UI page)
+      and git checkout to main then checked git merge branchname , and updated local (local git and local directory may be)
+       and then git push origin main and updated in GitHub UI page  - all 3 line seems come to main branch then git merge branch name with main branch)
+       
+       (above practiced note instead can do in GitHub with create pull request, it merge branch name to main branch)
 
    2nd way ( from git hub ui)
      create pull requests - It lets you tell others about changes you have pushed to a branch in repository on github
