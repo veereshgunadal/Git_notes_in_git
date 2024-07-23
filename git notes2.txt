@@ -29,6 +29,8 @@
        
        (above practiced note instead can do in GitHub with create pull request, it merge branch name to main branch)
 
+      checked file (switching branch, opened same file but content is different if branch is different git cmd)
+
    2nd way ( from git hub ui)
      create pull requests - It lets you tell others about changes you have pushed to a branch in repository on github
      then review the code and approve with message
